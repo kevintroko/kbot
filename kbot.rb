@@ -1,12 +1,23 @@
 class KleerBot
+    def calcularDescuento(total)
+        descuento = 0
+        puts "DTO(#{descuento})"
+        return descuento
+    end
+        
     def calcular(cantidad, precio, estado)
+        # Diccionario con impuestos
         taxes = {"CAL" => 8.25}
-        total = cantidad.to_i * precio.to_i
-        puts "# #{cantidad} * $#{precio} = $#{total}"
+    
+        subtotal = cantidad.to_i * precio.to_i
+        puts "# #{cantidad} * $#{precio} = $#{subtotal}"
         porcentaje = taxes[estado]
-        impuesto = total * porcentaje / 100
+        impuesto = subtotal * porcentaje / 100
         puts "#{estado}(#{porcentaje}) = $#{impuesto}"
-        puts "Total = #{total + impuesto}"
+        total = subtotal + impuesto
+        descuento = calcularDescuento(total)
+        
+        puts "Total = #{total - descuento}"
     end
 end
 
