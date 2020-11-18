@@ -3,7 +3,8 @@ class KleerBot
         taxes = {"CAL" => 8.25}
         total = cantidad.to_i * precio.to_i
         puts "# #{cantidad} * $#{precio} = $#{total}"
-        puts "#{estado}(#{taxes[estado]})"
+        porcentaje = taxes[estado]
+        puts "#{estado}(#{porcentaje}) = $#{total * porcentaje / 100}"
     end
 end
 
