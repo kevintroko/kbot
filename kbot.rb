@@ -1,6 +1,6 @@
 class KleerBot
     def calcular(cantidad, precio)
-        puts "# #{cantidad} #{precio}"
+        puts "# #{cantidad} $#{precio}"
     end
 end
 
