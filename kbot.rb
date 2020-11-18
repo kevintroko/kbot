@@ -24,7 +24,12 @@ class KleerBot
         
     def calcular(cantidad, precio, estado)
         # Diccionario con impuestos
-        taxes = {"CAL" => 8.25, "UT" => 6.85, "NV" => 8.00}
+        taxes = {
+            "CAL" => 8.25, 
+            "UT" => 6.85, 
+            "NV" => 8.00,
+            "TX" => 6.25
+        }
     
         subtotal = cantidad.to_i * precio.to_i
         puts "# #{cantidad} * $#{precio} = $#{subtotal}"
