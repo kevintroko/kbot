@@ -1,7 +1,12 @@
 class KleerBot
     def calcularDescuento(total)
         descuento = 0
-        puts "DTO(#{descuento})"
+        porcentaje = 0
+        if (total >= 1000) 
+            porcentaje = 3
+        end
+        descuento = total.to_f * (porcentaje.to_f / 100.0)
+        puts "DTO(#{porcentaje}%) = $#{descuento}"
         return descuento
     end
         
