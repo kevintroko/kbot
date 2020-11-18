@@ -4,7 +4,9 @@ class KleerBot
         total = cantidad.to_i * precio.to_i
         puts "# #{cantidad} * $#{precio} = $#{total}"
         porcentaje = taxes[estado]
-        puts "#{estado}(#{porcentaje}) = $#{total * porcentaje / 100}"
+        impuesto = total * porcentaje / 100
+        puts "#{estado}(#{porcentaje}) = $#{impuesto}"
+        puts "Total = #{total + impuesto}"
     end
 end
 

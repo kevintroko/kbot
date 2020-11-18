@@ -11,6 +11,7 @@
 8. Obtener tercer parametro de Estado e imprimir
 9. Añadir porcentaje de California e imprimir 
 10. Imprimir impuesto con respecto al precio
+11. Imprimir total de la operación con impuestos
 11. Imprimir valor de descuento para precios menores a $1000
 12. Añadir valor de descuento para valores mayores de 1000
 13. Añadir valor de descuento para valores mayores de 5000
