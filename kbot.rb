@@ -2,7 +2,9 @@ class KleerBot
     def calcularDescuento(total)
         descuento = 0
         porcentaje = 0
-        if (total >= 10000) 
+        if (total >= 15000) 
+            porcentaje = 15
+        elsif (total >= 10000) 
             porcentaje = 10
         elsif (total >= 7000) 
             porcentaje = 7
