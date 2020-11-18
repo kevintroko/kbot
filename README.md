@@ -1,6 +1,9 @@
 ## Elephant Carpaccio - Desafío
 **Kevin Oswaldo Cabrera Navarro**
 
+Aplicación de línea de comando que permita calcular los datos de facturación incluyendo impuestos y descuentos
+
+## Commits
 1. Obtener cantidad a traves de la línea de comandos
 2. Imprimir signo de numero en la consola
 3. Obtener precio unitario a traves de la línea de comandos
@@ -22,3 +25,9 @@
 18. Añadir Nevada al sistema de impuestos
 19. Añadir Texas al sistema de impuestos
 20. Añadir Alabama al sistema de impuestos
+21. Añadir README.md
+
+# Como usar
+```
+ruby factura.rb <cantidad> <precio unitario> <estado>
+```
