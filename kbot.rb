@@ -28,7 +28,8 @@ class KleerBot
             "CAL" => 8.25, 
             "UT" => 6.85, 
             "NV" => 8.00,
-            "TX" => 6.25
+            "TX" => 6.25,
+            "AL" => 4.00
         }
     
         subtotal = cantidad.to_i * precio.to_i
